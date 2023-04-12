@@ -473,13 +473,6 @@ group { name: "elm/hover/base/popout";
 			action: SIGNAL_EMIT "elm,action,dismiss" "";
 		}
 
-		program { name: "show";
-			signal: "elm,action,show";
-			source: "elm";
-			action: STATE_SET "visible" 0.0;
-			//            transition: DECELERATE 0.5;
-			target: "base";
-		}
 		program { name: "hide";
 			signal: "elm,action,hide";
 			source: "elm";
@@ -737,13 +730,6 @@ group { name: "elm/hover/base/menu";
 			source: "base";
 			action: SIGNAL_EMIT "elm,action,dismiss" "";
 		}
-		program { name: "show";
-			signal: "elm,action,show";
-			source: "elm";
-			action: STATE_SET "visible" 0.0;
-			//            transition: DECELERATE 0.5;
-			target: "base";
-		}
 		program { name: "hide";
 			signal: "elm,action,hide";
 			source: "elm";
@@ -981,13 +967,6 @@ group { name: "elm/hover/base/submenu";
 			signal: "mouse,up,1";
 			source: "base";
 			action: SIGNAL_EMIT "elm,action,dismiss" "";
-		}
-		program { name: "show";
-			signal: "elm,action,show";
-			source: "elm";
-			action: STATE_SET "visible" 0.0;
-			//            transition: DECELERATE 0.5;
-			target: "base";
 		}
 		program { name: "hide";
 			signal: "elm,action,hide";
@@ -1228,13 +1207,6 @@ group { name: "elm/hover/base/hoversel_vertical/default";
 			action: SIGNAL_EMIT "elm,action,dismiss" "";
 		}
 
-		program { name: "show";
-			signal: "elm,action,show";
-			source: "elm";
-			action: STATE_SET "visible" 0.0;
-			//            transition: DECELERATE 0.5;
-			target: "base";
-		}
 		program { name: "hide";
 			signal: "elm,action,hide";
 			source: "elm";

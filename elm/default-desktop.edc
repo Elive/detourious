@@ -1001,7 +1001,6 @@ collections {
                 source: "elm";
                 action: STATE_SET "enabled" 0.0;
                 transition: ACCELERATE 0.3;
-                target: "focus_highlight";
                 target: "conf_over";
             }
             program { name: "highlight_hide";

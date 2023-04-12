@@ -321,7 +321,6 @@
 		target: "icon_box";									\
 		target: "icon_box_bg";								\
 		target: "icon_box_shadow";							\
-		target: "icon";										\
 		/*after: "thumb_gen2";*/							\
 	}														\
 	program {												\

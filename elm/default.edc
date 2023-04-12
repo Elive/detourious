@@ -35,18 +35,18 @@ data.item: "version" "110";
 #define FONT "Sans:style=bold"
 #define FONT_BOLD "Sans:style=bold"
 #define FONT_ITALIC "Sans:style=bold,italic"
-#define TEXT_SIZE 8
-#define TEXT_SIZE_BOLD 8
-#define TEXT_SIZE_LARGE 8
-#define TEXT_SIZE_SMALL 7
+#define TEXT_SIZE 10
+#define TEXT_SIZE_BOLD 10
+#define TEXT_SIZE_LARGE 11
+#define TEXT_SIZE_SMALL 9
 #else
 #define FONT "Sans"
 #define FONT_BOLD "Sans"
 #define FONT_ITALIC "Sans:style=italic"
-#define TEXT_SIZE 9
-#define TEXT_SIZE_BOLD 8
-#define TEXT_SIZE_LARGE 9
-#define TEXT_SIZE_SMALL 8
+#define TEXT_SIZE 11
+#define TEXT_SIZE_BOLD 10
+#define TEXT_SIZE_LARGE 12
+#define TEXT_SIZE_SMALL 10
 #endif
 
 #define TEXT_EFFECT SHADOW
@@ -162,7 +162,7 @@ images {
 }
 styles {
 	style { name: "textblock_style";
-		base: "font="FONT" font_size=9 color=#3c3c3c text_class=label";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c text_class=label";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "hilight" "+ font_weight=Bold";
@@ -170,7 +170,7 @@ styles {
 		tag:  "tab" "\t";
 	}
 	style { name: "textblock_style2";
-		base: "font="FONT_BOLD" font_size=9 align=center color=#fff wrap=word text_class=label";
+		base: "font="FONT_BOLD" font_size="TEXT_SIZE" align=center color=#fff wrap=word text_class=label";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "hilight" "+ color=#ffff";
@@ -178,7 +178,7 @@ styles {
 		tag:  "tab" "\t";
 	}
 	style { name: "entry_textblock_style";
-		base: "font="FONT" font_size=9 color=#3c3c3c wrap=word text_class=entry";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c wrap=word text_class=entry";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
@@ -188,7 +188,7 @@ styles {
 		tag:  "hilight" "+ font_weight=Bold";
 	}
 	style { name: "entry_textblock_disabled_style";
-		base: "font="FONT" font_size=9 color=#3c3c3c80 wrap=word text_class=entry";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c80 wrap=word text_class=entry";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
@@ -198,7 +198,7 @@ styles {
 		tag:  "hilight" "+ font_weight=Bold";
 	}
 	style { name: "entry_textblock_style_mixedwrap";
-		base: "font="FONT" font_size=9 color=#3c3c3c wrap=mixed text_class=entry";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c wrap=mixed text_class=entry";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
@@ -208,7 +208,7 @@ styles {
 		tag:  "hilight" "+ font_weight=Bold";
 	}
 	style { name: "entry_textblock_disabled_style_mixedwrap";
-		base: "font="FONT" font_size=9 color=#3c3c3c80 wrap=char text_class=entry";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c80 wrap=char text_class=entry";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
@@ -218,7 +218,7 @@ styles {
 		tag:  "hilight" "+ font_weight=Bold";
 	}
 	style { name: "entry_textblock_style_charwrap";
-		base: "font="FONT" font_size=9 color=#3c3c3c wrap=char text_class=entry";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c wrap=char text_class=entry";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
@@ -228,7 +228,7 @@ styles {
 		tag:  "hilight" "+ font_weight=Bold";
 	}
 	style { name: "entry_textblock_disabled_style_charwrap";
-		base: "font="FONT" font_size=9 color=#3c3c3c80 wrap=char text_class=entry";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c80 wrap=char text_class=entry";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
@@ -238,7 +238,7 @@ styles {
 		tag:  "hilight" "+ font_weight=Bold";
 	}
 	style { name: "entry_single_textblock_style";
-		base: "font="FONT" font_size=9 color=#3c3c3c wrap=none text_class=entry";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c wrap=none text_class=entry";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
@@ -248,7 +248,7 @@ styles {
 		tag:  "hilight" "+ font_weight=Bold";
 	}
 	style { name: "entry_single_textblock_disabled_style";
-		base: "font="FONT" font_size=9 color=#3c3c3c80 wrap=none text_class=entry";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c80 wrap=none text_class=entry";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
@@ -258,26 +258,26 @@ styles {
 		tag:  "hilight" "+ font_weight=Bold";
 	}
 	style { name: "tooltip_style";
-		base: "font="FONT" font_size=8 color=#666 wrap=word";
+		base: "font="FONT" font_size="TEXT_SIZE_SMALL" color=#666 wrap=word";
 		tag:  "br" "\n";
 		tag:  "hilight" "+ font_weight=Bold";
 		tag:  "b" "+ font_weight=Bold";
 		tag:  "tab" "\t";
 	}
 	style { name: "genlist_textblock_style";
-		base: "font="FONT" font_size=9 color=#3c3c3c wrap=char text_class=list_item";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#3c3c3c wrap=char text_class=list_item";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
 	}
 	style { name: "genlist_textblock_style2";
-		base: "font="FONT" font_size=9 color=#fff wrap=char text_class=list_item";
+		base: "font="FONT" font_size="TEXT_SIZE" color=#fff wrap=char text_class=list_item";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "tab" "\t";
 	}
 	style { name: "gengrid_style";
-		base: "font="FONT" font_size=9 align=left valign=0.5 color=#3c3c3c text_class=grid_item";
+		base: "font="FONT" font_size="TEXT_SIZE" align=left valign=0.5 color=#3c3c3c text_class=grid_item";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "hilight" "+ font_weight=Bold";
@@ -285,7 +285,7 @@ styles {
 		tag:  "tab" "\t";
 	}
 	style { name: "gengrid_selected_style";
-		base: "font="FONT" font_size=9 align=left valign=0.5 color=#fff text_class=grid_item";
+		base: "font="FONT" font_size="TEXT_SIZE" align=left valign=0.5 color=#fff text_class=grid_item";
 		tag:  "br" "\n";
 		tag:  "ps" "ps";
 		tag:  "hilight" "+ font_weight=Bold";
@@ -299,7 +299,7 @@ styles {
 #define TEXT_DOT								\
 	text {										\
 		font: FONT;								\
-		size: 9;								\
+		size: TEXT_SIZE;								\
 		min: 1 1;								\
 		align: 0.0 0.5;							\
 		text: ".";								\
@@ -310,7 +310,7 @@ styles {
 	text {										\
 		text: "";								\
 		font: FONT;								\
-		size: 9;								\
+		size: TEXT_SIZE;								\
 		min: _min;								\
 		align: _align;							\
 		text_class: _text_class;				\
@@ -320,7 +320,7 @@ styles {
 	text {										\
 		text: "";								\
 		font: FONT;								\
-		size: 9;								\
+		size: TEXT_SIZE;								\
 		min: _min;								\
 		max: _max;								\
 		align: _align;							\
@@ -331,7 +331,7 @@ styles {
 	text {										\
 		text: "";								\
 		font: FONT_BOLD;								\
-		size: 8;								\
+		size: TEXT_SIZE_SMALL;								\
 		min: _min;								\
 		align: _align;							\
 		text_class: _text_class;				\
@@ -341,7 +341,7 @@ styles {
 	text {										\
 		text: "";								\
 		font: FONT_BOLD;								\
-		size: 8;								\
+		size: TEXT_SIZE_SMALL;								\
 		min: _min;								\
 		max: _max;								\
 		align: _align;							\
@@ -352,7 +352,7 @@ styles {
 	text {										\
 		text: "";								\
 		font: FONT;								\
-		size: 8;								\
+		size: TEXT_SIZE_SMALL;								\
 		min: _min;								\
 		align: _align;							\
 		text_class: _text_class;				\
@@ -363,7 +363,7 @@ styles {
 	text {												\
 		text: _label;									\
 		font: FONT_BOLD;								\
-		size: 8;										\
+		size: TEXT_SIZE;										\
 		min: _min;										\
 		align: _align;									\
 		text_class: _text_class;						\
@@ -373,7 +373,7 @@ styles {
 	text {										\
 		text: "";								\
 		font: FONT;								\
-		size: 10;								\
+		size: TEXT_SIZE_LARGE;								\
 		min: _min;								\
 		align: _align;							\
 		text_class: _text_class;				\

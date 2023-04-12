@@ -259,6 +259,17 @@ group { name: "elm/progressbar/horizontal/default";
 				}
 				rel2.to: "background";
 			}
+			description { state: "invert" 0.0;
+				inherit: "default" 0.0;
+				rel1 {
+					to_y: "elm.swallow.bar";
+					to_x: "elm.cur.progressbar";
+				}
+				rel2 {
+					to: "elm.swallow.bar";
+					relative: 1.0 1.0;
+				}
+                        }
 		}
 		part { name: "progress-rect";
 			type: RECT;
@@ -342,16 +353,6 @@ group { name: "elm/progressbar/horizontal/default";
 			action: STATE_SET "state_begin" 0.0;
 			target: "elm.progress.progressbar";
 			after: "units_hide";
-		}
-		program { name: "state_fraction";
-			signal: "elm,state,fraction";
-			source: "elm";
-			action: ACTION_STOP;
-			target: "slide_to_begin";
-			target: "slide_to_end";
-			target: "start_pulse";
-			action: STATE_SET "default" 0.0;
-			target: "elm.progress.progressbar";
 		}
 		program { name: "set_invert_on";
 			signal: "elm,state,inverted,on";
@@ -697,22 +698,11 @@ group { name: "elm/progressbar/vertical/default";
 			target: "elm.progress.progressbar";
 			after: "units_hide";
 		}
-		program { name: "state_fraction";
-			signal: "elm,state,fraction";
-			source: "elm";
-			action: ACTION_STOP;
-			target: "slide_to_begin";
-			target: "slide_to_end";
-			target: "start_pulse";
-			action: STATE_SET "default" 0.0;
-			target: "elm.progress.progressbar";
-		}
 		program { name: "set_invert_on";
 			signal: "elm,state,inverted,on";
 			source: "elm";
 			action:  STATE_SET "invert" 0.0;
 			target: "elm.progress.progressbar";
-			target: "elm.cur.progressbar";
 		}
 		program { name: "set_invert_off";
 			signal: "elm,state,inverted,off";

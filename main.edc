@@ -44,6 +44,8 @@ images {
 #include "images.edc" 			/* Includes both icons and regular images */
 }
 
+efl_version: 1 26;
+
 collections {
 #include "macros/gradient.edc"
 #include "macros/about_buttons.edc"
@@ -84,7 +86,7 @@ collections {
 #include "bits/ilist.edc"		/* icon list */
 #include "bits/init.edc"		/* init screen */
 #include "bits/label.edc"		/* label definiton group */
-#include "bits/fileman.edc" 		/* file manager groups */
+//#include "bits/fileman.edc" 		[> file manager groups <]
 #include "bits/menu.edc" 		/* menu and context menu groups */
 	//~ include "bits/mixer.png"		/* mixer module group */
 #include "bits/move_resize_info.edc" 		/* move window information group */
@@ -107,15 +109,15 @@ collections {
 #include "bits/transitions.edc"		/* desktop wallpaper transitions */
 #include "bits/winlist.edc"		/* window list (alt+tab) */
 #include "bits/toolbar.edc"
-#include "bits/everything.edc"
+//#include "bits/everything.edc"
 #include "bits/comp.edc"
-#include "bits/notification.edc"
+//#include "bits/notification.edc"
 #include "bits/evry-shotgun.edc"
 #include "bits/engage.edc"		/* engage module */
 #include "bits/bluez.edc"       /* bluez module */
 #include "bits/mixer.edc"       /* mixer module */
 #include "bits/illume.edc"
 #include "bits/illume_kbd.edc"
-#include "bits/itask.edc"
+//#include "bits/itask.edc"
 }
 

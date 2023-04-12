@@ -419,7 +419,6 @@ group {
 			source: "e";
 			action: STATE_SET "combo" 0.0;
 			target: "e.swallow.icon";
-			target: "e.text.label";
 		}
 		program {
 			name: "enabled_button";
@@ -442,7 +441,6 @@ group {
 			action: STATE_SET "disabled" 0.0;
 			target: "minimum.size.hack";
 			target: "base"; 
-			target: "enabled_button";
 			target: "disabled_button";
 			target: "disabled_over"; 
 			target: "shadow";

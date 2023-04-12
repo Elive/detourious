@@ -578,16 +578,6 @@ group {
 			action: STATE_SET "visible" 0.0; /* set it to visible */
 			transition: DECELERATE 2.0; in: 3.5 0.0; /* delay */
 			target: "splash.clip";
-			after: "load.text"; 
-		}
-		program { 
-			name: "load.text";
-			signal: ""; 
-			source: "";
-			action: STATE_SET "active" 0.0; 
-			transition: DECELERATE 1.0;
-			target: "text.area";
-			after: "load.icon.clip1"; 
 		}
 		program { 
 			name: "load.icon.clip1";
@@ -662,7 +652,6 @@ group {
 			source: "";
 			action: STATE_SET "active" 0.0;
 			target: "check";
-			target: "check_outline";
 		} 
 		program {
 			name: "disabled.initscreen"; 
